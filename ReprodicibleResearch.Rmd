@@ -57,7 +57,7 @@ plot(steps_by_interval$interval,steps_by_interval$steps, type="l", xlab="Interva
 
 max_interval <- steps_by_interval[which.max(steps_by_interval$steps),1]
 ```
-The 5-minute interval, on average across all the days in the data set, containing the maximum number of steps is r max_interval.
+The 5-minute interval, on average across all the days in the data set, containing the maximum number of steps is `r max_interval`.
 
 ##Impute missing values. Compare between imputed and non-imputed data
 
@@ -98,11 +98,11 @@ Calculate the total difference
 total_diff <- sum(steps_by_day_i$steps) - sum(steps_by_day$steps)
 ```
 
-- The imputed data mean is r rmean.i
-- The imputed data median is r rmedian.i
-- The difference between the non-imputed mean and imputed mean is r mean_diff
-- The difference between the non-imputed mean and imputed mean is r med_diff
-- The difference between total number of steps between imputed and non-imputed data is r total_diff. Therefore there a total of r total_diff more steps.
+- The imputed data mean is `r rmean.i`
+- The imputed data median is `r rmedian.i`
+- The difference between the non-imputed mean and imputed mean is `r mean_diff`
+- The difference between the non-imputed mean and imputed mean is `r med_diff`
+- The difference between total number of steps between imputed and non-imputed data is `r total_diff`. Therefore there a total of `r total_diff` more steps.
 
 ##Difference in activity pattern on weekdays and weekends?
 
